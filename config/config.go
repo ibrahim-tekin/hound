@@ -13,7 +13,7 @@ const (
 	defaultPushEnabled           = false
 	defaultPollEnabled           = true
 	defaultVcs                   = "git"
-	defaultBaseUrl               = "{url}/blob/master/{path}{anchor}"
+	defaultBaseUrl               = "{url}/blob/develop/{path}{anchor}"
 	defaultAnchor                = "#L{line}"
 	defaultHealthChekURI         = "/healthz"
 )
