@@ -165,6 +165,8 @@ func main() {
 	}
 
 	info_log.Printf("running server at http://%s...\n", host)
+	
+	exec.Command("rundll32", "url.dll,FileProtocolHandler", "http://localhost:6080/").Start()
 
 	// Fully enable the web server now that we have indexes
 	panic(ws.ServeWithIndex(idx))
