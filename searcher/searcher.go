@@ -263,7 +263,7 @@ func hashFor(name string) string {
 
 // Create a normalized name for the vcs directory of this repo.
 func vcsDirFor(repo *config.Repo) string {
-	return fmt.Sprintf("vcs-%s", hashFor(repo.Url))
+	return fmt.Sprintf("v-%s", hashFor(repo.Url)[:5])
 }
 
 func init() {
